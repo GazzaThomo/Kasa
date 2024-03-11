@@ -6,6 +6,7 @@ import Apropos from "./Pages/A-propos";
 import Error from "./Components/Error";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import "./sass/layout.css";
 
 import { createGlobalStyle } from "styled-components";
 

@@ -1,41 +1,21 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import styled from "styled-components";
-import colors from "../../utils/styles/colors.js";
-
-const HomeLogo = styled.img`
-  height: 68px;
-`;
-
-const NavContainer = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-const StyledLinks = styled(Link)`
-  margin-left: 47px;
-  color: ${colors.black};
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: 500;
-  cursor: pointer;
-  &:hover {
-    text-decoration: underline;
-  }
-`;
 
 function Header() {
   return (
-    <NavContainer>
+    <nav className="navbar">
       <Link to="/">
-        <HomeLogo src={logo} />
+        <img src={logo} className="logo" />
       </Link>
       <div>
-        <StyledLinks to="/">Accueil</StyledLinks>
-        <StyledLinks to="/a-propos">A Propos</StyledLinks>
+        <Link to="/" className="link">
+          Accueil
+        </Link>
+        <Link to="/a-propos" className="link">
+          A Propos
+        </Link>
       </div>
-    </NavContainer>
+    </nav>
   );
 }
 

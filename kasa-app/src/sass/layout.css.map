@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/_header.scss","layout.css","base/_colors.scss","components/_footer.scss"],"names":[],"mappings":"AAEA;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;ACDF;ADGE;EACE,YAAA;ACDJ;ADIE;EACE,iBAAA;EACA,WEZI;EFaJ,qBAAA;EACA,eAAA;EACA,gBAAA;EACA,eAAA;ACFJ;ADGI;EACE,0BAAA;ACDN;;AEhBA;EACE,WDDM;ECEN,eAAA;EACA,kBAAA;EACA,sBDLM;ECMN,gBAAA;AFmBF","file":"layout.css"}

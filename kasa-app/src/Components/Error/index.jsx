@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import colors from "../../utils/styles/colors";
 import { Link } from "react-router-dom";
-import Header from "../../Components/Header";
 
 const ErrorMessageContainer = styled.div`
   margin: auto;
@@ -29,15 +28,12 @@ const StyledLink = styled(Link)`
 
 function Error() {
   return (
-    <>
-      <Header />
-      <ErrorMessageContainer>
-        {" "}
-        <ErrorTitle>404</ErrorTitle>
-        <ErrorText>Oups! La page que vous demandez n'existe pas.</ErrorText>
-        <StyledLink to="/">Retourner sur la page d'accueil</StyledLink>
-      </ErrorMessageContainer>
-    </>
+    <ErrorMessageContainer>
+      {" "}
+      <ErrorTitle>404</ErrorTitle>
+      <ErrorText>Oups! La page que vous demandez n'existe pas.</ErrorText>
+      <StyledLink to="/">Retourner sur la page d'accueil</StyledLink>
+    </ErrorMessageContainer>
   );
 }
 
