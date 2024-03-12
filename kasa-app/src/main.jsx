@@ -7,6 +7,7 @@ import Error from "./Components/Error";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import "./sass/layout.css";
+import data from "./data.js";
 
 import { createGlobalStyle } from "styled-components";
 
@@ -33,7 +34,7 @@ ReactDOM.render(
       <GlobalStyle />
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home data={data} />} />
         <Route path="/a-propos" element={<Apropos />}></Route>
         <Route path="/*" element={<Error />}></Route>
       </Routes>
