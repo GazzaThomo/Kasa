@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import arrowBack from "../../assets/arrow-back.svg";
 import arrowForward from "../../assets/arrow-forward.svg";
 
-function Gallery(pictures) {
+function Gallery({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  pictures = Array.from(pictures.data);
+  console.log(pictures);
 
+  //neat trick here, use modulo to get back to the first image
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
   };

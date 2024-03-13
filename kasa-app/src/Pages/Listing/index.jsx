@@ -6,10 +6,11 @@ import Description from "../../Components/Description";
 function Listing({ data }) {
   let { id } = useParams();
   const listingData = data.find((element) => element.id === id);
-  console.log(listingData);
+  // console.log(listingData);
+  // console.log(listingData.pictures);
   return (
     <div className="listing-container">
-      <Gallery data={listingData.pictures} />
+      <Gallery pictures={listingData.pictures} />
       <Description data={listingData} />
       <div className="collapses-container">
         <Collapse title="Description">

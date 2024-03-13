@@ -6,8 +6,9 @@ function Description({ data }) {
   for (let i = data.rating; i < stars.length; i++) {
     stars[i] = false;
   }
+  //use memo
 
-  console.log(data);
+  // console.log(data);
   return (
     <div className="description">
       {" "}
