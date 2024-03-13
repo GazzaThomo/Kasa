@@ -1,0 +1,27 @@
+// Collapse.scss
+.collapse-container {
+  margin: 20px 0;
+  border: 1px solid #ccc;
+}
+
+.collapse-header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+
+  .arrow {
+    transition: transform 0.3s ease;
+  }
+
+  .open {
+    transform: rotate(180deg);
+  }
+}
+
+.collapse-content {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}

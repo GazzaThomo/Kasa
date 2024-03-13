@@ -11,8 +11,13 @@ function Home({ data }) {
         Chez vous, partout et ailleurs
       </div>
       <div className="card-container">
-        {data.map((item, index) => (
-          <Card key={index} imageUrl={item.pictures[0]} title={item.title} />
+        {data.map((item) => (
+          <Card
+            key={item.id}
+            cover={item.cover}
+            title={item.title}
+            id={item.id}
+          />
         ))}
       </div>
     </div>

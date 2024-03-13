@@ -1,9 +1,13 @@
-function Card({ imageUrl, title }) {
+import { Link } from "react-router-dom";
+
+function Card({ cover, title, id }) {
   return (
-    <div className="card">
-      <img src={imageUrl} alt="image du bien à louer" className="card--image" />
-      <div className="card--title">{title}</div>
-    </div>
+    <Link to={`/listing/${id}`}>
+      <div className="card">
+        <img src={cover} alt={title} className="card--image" />
+        <div className="card--title">{title}</div>
+      </div>
+    </Link>
   );
 }
 

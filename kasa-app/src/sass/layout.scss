@@ -1,5 +1,6 @@
 @import "base/colors";
 
-@import "components/header", "components/footer", "components/card";
+@import "components/header", "components/footer", "components/card",
+  "components/gallery", "components/collapse";
 
-@import "pages/home";
+@import "pages/home", "pages/listing";

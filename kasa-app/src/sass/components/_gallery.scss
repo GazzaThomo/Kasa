@@ -1,0 +1,58 @@
+// Gallery.scss
+.gallery {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 415px;
+  width: 100%;
+  overflow: hidden;
+
+  .gallery-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent; // Consider styling as needed
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+
+    &.prev {
+      left: 20px;
+    }
+
+    &.next {
+      right: 20px;
+    }
+
+    img {
+      height: 24px; // Adjust based on your SVG size
+      width: auto;
+    }
+  }
+
+  .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .image-counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+}
