@@ -5,7 +5,6 @@ import arrowForward from "../../assets/arrow-forward.svg";
 function Gallery(pictures) {
   const [currentIndex, setCurrentIndex] = useState(0);
   pictures = Array.from(pictures.data);
-  console.log(pictures);
 
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);

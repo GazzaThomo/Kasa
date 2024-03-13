@@ -1,7 +1,7 @@
 // Collapse.scss
 .collapse-container {
   margin: 20px 0;
-  border: 1px solid #ccc;
+  border-radius: 25px;
 }
 
 .collapse-header {
@@ -11,6 +11,8 @@
   align-items: center;
   cursor: pointer;
   user-select: none;
+  background-color: $primary;
+  color: $white;
 
   .arrow {
     transition: transform 0.3s ease;
