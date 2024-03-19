@@ -6,7 +6,7 @@ function Apropos() {
   return (
     <div>
       <img src={mountains} alt="moutains" className="aPropos-image" />
-      <div className="collapse-container">
+      <div className="aPropos-collapse-container">
         {data.map((item, index) => (
           <Collapse title={item.title} key={`${index}-collapse`}>
             <p>{item.content}</p>
