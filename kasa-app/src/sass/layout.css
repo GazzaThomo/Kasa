@@ -263,6 +263,23 @@
   gap: 20px;
 }
 
+.aPropos-image {
+  width: 100%;
+  height: 223px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+
+.collapse-container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.collapse-header {
+  font-size: 24px;
+}
+
 * {
   font-family: "Monserrat", Helvetica, sans-serif;
 }
