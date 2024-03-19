@@ -1,11 +1,11 @@
 // Collapse.scss
 .collapse-container {
-  margin: 20px 0;
+  margin: 25px 0;
   border-radius: 25px;
 }
 
 .collapse-header {
-  padding: 10px;
+  padding: 10px 25px 10px 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,6 +13,9 @@
   user-select: none;
   background-color: $primary;
   color: $white;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 10px;
 
   .arrow {
     transition: transform 0.3s ease;
@@ -25,5 +28,5 @@
 
 .collapse-content {
   padding: 10px;
-  border-top: 1px solid #ccc;
+  background-color: $light-grey;
 }

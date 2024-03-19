@@ -1,10 +1,12 @@
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 50px;
   justify-items: center;
   align-items: center;
   background-color: $light-grey;
+  padding: 25px;
+  border-radius: 25px;
 }
 
 .title-block {
@@ -14,11 +16,11 @@
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 24px;
+  font-size: 48px;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 25px;
   margin-bottom: 50px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);

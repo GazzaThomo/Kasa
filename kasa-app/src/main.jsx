@@ -10,29 +10,9 @@ import Listing from "./Pages/Listing";
 import "./sass/layout.css";
 import data from "./data.js";
 
-import { createGlobalStyle } from "styled-components";
-
-const GlobalStyle = createGlobalStyle`
-    * {
-      font-family: 'Monserrat', Helvetica, sans-serif;
-    }
-
-    #root, body {
-      min-height:100vh;
-      display: flex;
-      flex-direction:column;
-    }
-
-    body {
-      margin: auto;
-      max-width: 1440px;
-    }
-`;
-
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <GlobalStyle />
       <Header />
       <Routes>
         <Route path="/" element={<Home data={data} />} />

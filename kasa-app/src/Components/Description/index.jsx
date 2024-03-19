@@ -1,14 +1,17 @@
 import starActive from "../../assets/star-active.svg";
 import starInactive from "../../assets/star-inactive.svg";
+import { useMemo } from "react";
 
 function Description({ data }) {
-  let stars = [true, true, true, true, true];
-  for (let i = data.rating; i < stars.length; i++) {
-    stars[i] = false;
-  }
-  //use memo
+  //useMemo so avoid reload errors
+  const stars = useMemo(() => {
+    let starsArray = [true, true, true, true, true]; // initialize with 5 active stars
+    for (let i = data.rating; i < starsArray.length; i++) {
+      starsArray[i] = false; // Set inactive stars based on rating
+    }
+    return starsArray;
+  }, [data.rating]); // dependency array: recompute when data.rating changes
 
-  // console.log(data);
   return (
     <div className="description">
       {" "}

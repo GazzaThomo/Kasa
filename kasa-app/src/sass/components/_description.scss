@@ -1,16 +1,22 @@
 .description {
   display: flex;
   justify-content: space-between;
+  margin-top: 25px;
   &--left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &--title {
       color: $primary;
       font-size: 36px;
       font-weight: 500;
+      margin: 0;
     }
 
     &--location {
       font-size: 18px;
       font-weight: 500;
+      margin: 0;
     }
 
     &--tags {
@@ -20,17 +26,40 @@
 
     &--tag {
       background-color: $primary;
-      padding: 5px 20px;
-      border-radius: 25px;
+      border-radius: 10px;
       color: $white;
+      height: 25px;
+      width: 115px;
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
   &--right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &--person {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+    &--name {
+      font-size: 18px;
+      color: $primary;
+    }
     &--photo {
       border-radius: 50%;
+      height: 64px;
+      width: 64px;
     }
-    &--rating{
-      display:flex;
+    &--rating {
+      display: flex;
       align-items: center;
+      justify-content: flex-end;
+    }
   }
 }

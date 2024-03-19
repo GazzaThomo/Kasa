@@ -1,0 +1,16 @@
+* {
+  font-family: "Monserrat", Helvetica, sans-serif;
+}
+
+#root,
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 100px 0 100px;
+}
+
+body {
+  margin: auto;
+  max-width: 1440px;
+}

@@ -27,7 +27,7 @@ function Gallery({ pictures }) {
       <div className="image-container">
         <img src={pictures[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
         {pictures.length > 1 && (
-          <div className="image-counter">{`${currentIndex + 1} / ${
+          <div className="image-counter">{`${currentIndex + 1}/${
             pictures.length
           }`}</div>
         )}
