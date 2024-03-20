@@ -17,8 +17,17 @@
   font-size: 18px;
   border-radius: 10px;
 
+  @media (max-width: 1024px) {
+    font-size: 13px;
+  }
+
   .arrow {
     transition: transform 0.3s ease;
+
+    @media (max-width: 1024px) {
+      height: 9px;
+      width: 16px;
+    }
   }
 
   .open {

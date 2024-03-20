@@ -3,13 +3,24 @@
   height: 223px;
   object-fit: cover;
   border-radius: 25px;
+  @media (max-width: 1024px) {
+    height: 111px;
+    border-radius: 10px;
+  }
 }
 
 .aPropos-collapse-container {
   padding-left: 50px;
   padding-right: 50px;
+  @media (max-width: 1024px) {
+    padding: 0;
+  }
 }
 
 .collapse-header {
   font-size: 24px;
+
+  @media (max-width: 1024px) {
+    font-size: 13px;
+  }
 }
