@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="footer">
       <Link to="/">
-        <img src={logoWhite} alt="Logo kasa" />
+        <img src={logoWhite} alt="Logo kasa" className="footerLogo" />
       </Link>
       <p>© 2020 Kasa. All rights reserved</p>
     </footer>

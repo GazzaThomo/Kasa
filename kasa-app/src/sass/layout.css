@@ -8,6 +8,16 @@
 .navbar .logo {
   height: 68px;
 }
+@media (max-width: 1024px) {
+  .navbar .logo {
+    height: 47px;
+  }
+}
+@media (max-width: 1024px) {
+  .navbar .linkDiv {
+    gap: 15px;
+  }
+}
 .navbar .link {
   margin-left: 47px;
   color: #000;
@@ -15,6 +25,12 @@
   font-size: 24px;
   font-weight: 500;
   cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .navbar .link {
+    font-size: 12px;
+    margin-left: 20px;
+  }
 }
 .navbar .active {
   text-decoration: underline;
@@ -27,6 +43,15 @@
   background-color: #000;
   margin-top: 40px;
   padding-top: 50px;
+}
+@media (max-width: 1024px) {
+  .footer {
+    font-size: 12px;
+    padding-bottom: 25px;
+  }
+  .footer .footerLogo {
+    height: 40px;
+  }
 }
 
 .card {
@@ -43,6 +68,13 @@
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+}
+@media (max-width: 1024px) {
+  .card {
+    height: 255px;
+    max-width: 335px;
+    width: 100%;
+  }
 }
 .card--title {
   max-width: 80%;
@@ -223,6 +255,15 @@
   padding: 25px;
   border-radius: 25px;
 }
+@media (max-width: 1024px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 25px 0;
+    gap: 15px;
+  }
+}
 
 .title-block {
   width: 100%;
@@ -232,13 +273,21 @@
   align-items: center;
   color: white;
   font-size: 48px;
-  text-align: center;
   position: relative;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 25px;
   margin-bottom: 50px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1024px) {
+  .title-block {
+    font-size: 24px;
+    justify-content: flex-start;
+    height: 111px;
+    padding-left: 20px;
+    text-wrap: wrap;
+  }
 }
 .title-block::before {
   content: "";
@@ -299,5 +348,5 @@ body {
 }
 
 .container {
-  margin: 50px 100px 0 100px;
+  margin: 24px 24px 0 24px;
 }/*# sourceMappingURL=layout.css.map */

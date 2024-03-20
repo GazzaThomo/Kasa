@@ -7,7 +7,7 @@ function Header() {
       <NavLink to="/">
         <img src={logo} className="logo" alt="Logo" />
       </NavLink>
-      <div>
+      <div className="linkDiv">
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? "link active" : "link")}

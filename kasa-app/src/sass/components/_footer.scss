@@ -5,4 +5,12 @@
   background-color: $black;
   margin-top: 40px;
   padding-top: 50px;
+  @media (max-width: 1024px) {
+    font-size: 12px;
+    padding-bottom: 25px;
+
+    .footerLogo {
+      height: 40px;
+    }
+  }
 }

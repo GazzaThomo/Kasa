@@ -7,6 +7,14 @@
   background-color: $light-grey;
   padding: 25px;
   border-radius: 25px;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    padding: 25px 0;
+    gap: 15px;
+  }
 }
 
 .title-block {
@@ -17,13 +25,20 @@
   align-items: center;
   color: white;
   font-size: 48px;
-  text-align: center;
   position: relative;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 25px;
   margin-bottom: 50px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+
+  @media (max-width: 1024px) {
+    font-size: 24px;
+    justify-content: flex-start;
+    height: 111px;
+    padding-left: 20px;
+    text-wrap: wrap;
+  }
 
   &::before {
     content: "";

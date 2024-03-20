@@ -7,6 +7,15 @@
 
   .logo {
     height: 68px;
+    @media (max-width: 1024px) {
+      height: 47px;
+    }
+  }
+
+  .linkDiv {
+    @media (max-width: 1024px) {
+      gap: 15px;
+    }
   }
 
   .link {
@@ -16,6 +25,11 @@
     font-size: 24px;
     font-weight: 500;
     cursor: pointer;
+
+    @media (max-width: 1024px) {
+      font-size: 12px;
+      margin-left: 20px;
+    }
   }
 
   .active {
