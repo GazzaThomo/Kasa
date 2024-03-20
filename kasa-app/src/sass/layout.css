@@ -107,6 +107,13 @@
   width: 100%;
   overflow: hidden;
   border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1024px) {
+  .gallery {
+    height: 225px;
+  }
 }
 .gallery .gallery-button {
   position: absolute;
@@ -148,6 +155,11 @@
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 24px;
+}
+@media (max-width: 1024px) {
+  .gallery .image-counter {
+    display: none;
+  }
 }
 
 .collapse-container {
@@ -198,6 +210,11 @@
   justify-content: space-between;
   margin-top: 25px;
 }
+@media (max-width: 1024px) {
+  .description {
+    flex-direction: column;
+  }
+}
 .description--left {
   display: flex;
   flex-direction: column;
@@ -234,6 +251,12 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media (max-width: 1024px) {
+  .description--right {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
 .description--right--person {
   display: flex;
@@ -315,7 +338,8 @@
 }
 
 .listing-container {
-  width: 1240px;
+  max-width: 1240px;
+  width: 100%;
   margin: auto;
 }
 
@@ -323,6 +347,13 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+@media (max-width: 1024px) {
+  .collapses-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .aPropos-image {

@@ -1,5 +1,6 @@
 .listing-container {
-  width: 1240px;
+  max-width: 1240px;
+  width: 100%;
   margin: auto;
 }
 
@@ -7,4 +8,14 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
+// .collapse-container {
+//   @media (max-width: 1024px) {
+//     width: 50%;
+//   }
+// }
