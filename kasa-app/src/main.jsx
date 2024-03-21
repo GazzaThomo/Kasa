@@ -14,15 +14,17 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <div className="container">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home data={data} />} />
-          <Route path="/a-propos" element={<Apropos />} />
-          <Route path="/listing/:id" element={<Listing data={data} />} />
-          <Route path="/*" element={<Error />} />
-        </Routes>
-        <Footer />
+        <div className="contentWrapper">
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home data={data} />} />
+            <Route path="/a-propos" element={<Apropos />} />
+            <Route path="/listing/:id" element={<Listing data={data} />} />
+            <Route path="/*" element={<Error />} />
+          </Routes>
+        </div>
       </div>
+      <Footer />
     </Router>
   </React.StrictMode>,
   document.getElementById("root")

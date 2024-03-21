@@ -5,22 +5,32 @@
 
   @media (max-width: 1024px) {
     flex-direction: column;
+    gap: 10px;
   }
   &--left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media (max-width: 1024px) {
+      gap: 10px;
+    }
     &--title {
       color: $primary;
       font-size: 36px;
       font-weight: 500;
       margin: 0;
+      @media (max-width: 1024px) {
+        font-size: 18px;
+      }
     }
 
     &--location {
       font-size: 18px;
       font-weight: 500;
       margin: 0;
+      @media (max-width: 1024px) {
+        font-size: 14px;
+      }
     }
 
     &--tags {
@@ -39,6 +49,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @media (max-width: 1024px) {
+        width: 84px;
+        height: 18px;
+        font-size: 10px;
+      }
     }
   }
   &--right {
@@ -59,16 +74,29 @@
     &--name {
       font-size: 18px;
       color: $primary;
+      @media (max-width: 1024px) {
+        font-size: 12px;
+      }
     }
     &--photo {
       border-radius: 50%;
       height: 64px;
       width: 64px;
+      @media (max-width: 1024px) {
+        height: 32px;
+        width: 32px;
+      }
     }
     &--rating {
       display: flex;
       align-items: center;
       justify-content: flex-end;
+
+      .star {
+        @media (max-width: 1024px) {
+          height: 18px;
+        }
+      }
     }
   }
 }

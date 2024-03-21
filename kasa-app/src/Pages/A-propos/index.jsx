@@ -8,9 +8,11 @@ function Apropos() {
       <img src={mountains} alt="moutains" className="aPropos-image" />
       <div className="aPropos-collapse-container">
         {data.map((item, index) => (
-          <Collapse title={item.title} key={`${index}-collapse`}>
-            <p>{item.content}</p>
-          </Collapse>
+          <div className="apropos-collapse">
+            <Collapse title={item.title} key={`${index}-collapse`}>
+              <p>{item.content}</p>
+            </Collapse>
+          </div>
         ))}
       </div>
     </div>

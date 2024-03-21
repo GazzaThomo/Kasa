@@ -1,0 +1,35 @@
+// Error.scss
+.ErrorMessageContainer {
+  margin: auto;
+  text-align: center;
+  color: $primary; // Use variable from colors.scss
+}
+
+.ErrorTitle {
+  font-size: 288px;
+  font-weight: 700;
+
+  @media (max-width: 1024px) {
+    font-size: 96px;
+  }
+}
+
+.ErrorText {
+  font-size: 36px;
+  font-weight: 500;
+  @media (max-width: 1024px) {
+    font-size: 18px;
+  }
+}
+
+.StyledLink {
+  font-size: 18px;
+  text-decoration: underline;
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
+
+  &:visited {
+    color: $black; // Use variable from colors.scss
+  }
+}

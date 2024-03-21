@@ -1,39 +1,15 @@
-import styled from "styled-components";
-import colors from "../../utils/styles/colors";
+import React from "react";
 import { Link } from "react-router-dom";
-
-const ErrorMessageContainer = styled.div`
-  margin: auto;
-  text-align: center;
-  color: ${colors.primary};
-`;
-
-const ErrorTitle = styled.h1`
-  font-size: 288px;
-  font-weight: 700;
-`;
-
-const ErrorText = styled.p`
-  font-size: 36px;
-  font-weight: 500;
-`;
-
-const StyledLink = styled(Link)`
-  font-size: 18px;
-  text-decoration: underline;
-  &:visited {
-    color: ${colors.black};
-  }
-`;
 
 function Error() {
   return (
-    <ErrorMessageContainer>
-      {" "}
-      <ErrorTitle>404</ErrorTitle>
-      <ErrorText>Oups! La page que vous demandez n'existe pas.</ErrorText>
-      <StyledLink to="/">Retourner sur la page d'accueil</StyledLink>
-    </ErrorMessageContainer>
+    <div className="ErrorMessageContainer">
+      <h1 className="ErrorTitle">404</h1>
+      <p className="ErrorText">Oups! La page que vous demandez n'existe pas.</p>
+      <Link to="/" className="StyledLink">
+        Retourner sur la page d'accueil
+      </Link>
+    </div>
   );
 }
 

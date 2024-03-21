@@ -24,3 +24,9 @@
     font-size: 13px;
   }
 }
+
+.apropos-collapse {
+  @media (max-width: 1024px) {
+    margin: 25px 0;
+  }
+}
