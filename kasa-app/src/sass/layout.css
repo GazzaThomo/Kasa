@@ -270,7 +270,8 @@
   border-radius: 10px;
   color: #fff;
   height: 25px;
-  width: 115px;
+  width: auto;
+  padding: 0 10px;
   font-size: 14px;
   font-weight: 700;
   display: flex;
@@ -279,7 +280,6 @@
 }
 @media (max-width: 1024px) {
   .description--left--tag {
-    width: 84px;
     height: 18px;
     font-size: 10px;
   }
