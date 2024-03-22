@@ -5,11 +5,9 @@ import Collapse from "../../Components/Collapse";
 import Description from "../../Components/Description";
 
 function Listing({ data }) {
-  console.log(data);
   let { id } = useParams();
   const navigate = useNavigate();
   const listingData = data.find((element) => element.id === id);
-  console.log(listingData);
 
   useEffect(() => {
     // check is listing data exists
