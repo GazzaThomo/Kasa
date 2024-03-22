@@ -15,14 +15,13 @@ function Listing({ data }) {
     // check is listing data exists
     if (!listingData) {
       // if it doesn't, go to the error page
-      navigate("/error", { replace: true }); // Changed to "/error" for clarity, adjust as needed
+      navigate("/error", { replace: true }); // changed to error, but could be replaced by the * if a new page called error is brought in
     }
-  }, [id, navigate, listingData]); // Depend on listingData as well
+  }, [id, navigate, listingData]); //depends on listingdata too
 
-  // Conditional rendering based on listingData's availability
+  // why is this needed ? bugs out if it's not here
   if (!listingData) {
-    // Optionally, render a loading indicator or null while waiting for the redirect
-    return <div>Loading...</div>; // Or null if you prefer not to render anything
+    return <div>Loading...</div>; //can return null here to leave blank page
   }
 
   return (
