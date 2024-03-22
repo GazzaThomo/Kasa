@@ -186,6 +186,8 @@
   font-weight: 700;
   font-size: 18px;
   border-radius: 10px;
+  z-index: 1;
+  position: relative;
 }
 @media (max-width: 1024px) {
   .collapse-header {
@@ -206,8 +208,15 @@
 }
 
 .collapse-content {
-  padding: 10px;
+  padding: 20px 10px 10px 10px;
   background-color: #f6f6f6;
+  border-radius: 10px;
+  margin-top: -20px;
+  position: relative;
+  z-index: 0;
+}
+.collapse-content p {
+  margin-top: 20px;
 }
 
 .description {
@@ -362,6 +371,10 @@
   color: #000;
 }
 
+.home-container {
+  width: 100%;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -402,8 +415,10 @@
     font-size: 24px;
     justify-content: flex-start;
     height: 111px;
-    padding-left: 20px;
     text-wrap: wrap;
+  }
+  .title-block-text {
+    margin-left: 20px;
   }
 }
 .title-block::before {

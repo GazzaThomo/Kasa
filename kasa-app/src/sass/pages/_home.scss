@@ -1,3 +1,7 @@
+.home-container {
+  width: 100%;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -36,8 +40,11 @@
     font-size: 24px;
     justify-content: flex-start;
     height: 111px;
-    padding-left: 20px;
     text-wrap: wrap;
+
+    &-text {
+      margin-left: 20px;
+    }
   }
 
   &::before {
