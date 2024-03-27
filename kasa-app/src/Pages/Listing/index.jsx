@@ -17,10 +17,11 @@ function Listing({ data }) {
     }
   }, [id, navigate, listingData]); //depends on listingdata too
 
-  // why is this needed ? bugs out if it's not here
   if (!listingData) {
     return <div>Loading...</div>; //can return null here to leave blank page
   }
+
+  //useeffect only applies after the code has loaded
 
   return (
     <div className="listing-container">
